@@ -30,28 +30,36 @@ Hardware – PCs, Cyclone II , USB flasher
 
 5.	For different input combinations generate the timing diagram.
 
+**Truth Table**
+
+<img width="483" height="292" alt="image" src="https://github.com/user-attachments/assets/a4835aa4-34ee-420b-a5ad-c824a31c7dbd" />
+
+
 
 **Program:**
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
+~~~
+ module ex2 (a,b,c,d,w,x,y,z,f1,f2);
+ input a,b,c,d,w,x,y,z; output f1,f2;
+ assign f1 = ~a&~b&~c&~d | a&~c&~d | ~b&c&~d | ~a&b&c&d | b&~c&d;
+ assign f2 = x&~y&z | ~x&~y&z | ~w&x&y | w&~x&y | w&x&y;
+ endmodule
+~~~
 
-Developed by: RegisterNumber:*/
+Developed by: RICKY DHARMESH . P
+
+RegisterNumber:25016025
 
 
 **RTL realization**
 
-**Output:**
-
-**RTL**
-
-
-<img width="1918" height="1079" alt="Screenshot 2025-12-14 222252" src="https://github.com/user-attachments/assets/0a26cb33-ce3b-4f65-9571-f79d489e7cc0" />
-
+<img width="1918" height="1079" alt="Screenshot 2025-12-14 222252" src="https://github.com/user-attachments/assets/9e478100-4199-46f5-b15d-da354e1ec653" />
 
 
 **Timing Diagram**
 
-<img width="1919" height="1079" alt="Screenshot 2025-12-14 223157" src="https://github.com/user-attachments/assets/c465ebab-ed0a-4800-95d1-160200631099" />
+<img width="1919" height="1079" alt="Screenshot 2025-12-14 223157" src="https://github.com/user-attachments/assets/c07684ce-6549-4606-9352-0c31b8ef140f" />
+
 
 
 **Result:**
